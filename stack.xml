@@ -1,0 +1,8 @@
+<stack>
+  <description brief="hrp2">hrp2</description>
+  <author>Maintained by Thomas Moulard</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/hrp2</url>
+  <depend stack="ros" />
+</stack>
