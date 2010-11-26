@@ -1,0 +1,14 @@
+<package>
+  <description brief="hrp2_simu">
+
+     hrp2_simu
+
+  </description>
+  <author>Thomas Moulard</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/hrp2_simu</url>
+
+</package>
+
+
