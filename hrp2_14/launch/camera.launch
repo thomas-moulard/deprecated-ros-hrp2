@@ -7,12 +7,13 @@
 	  respawn="true" >
       <param
 	 name="camera_info_url"
-	 value="file://$(find $(env ROBOT))/launch/calibration/narrow_left.yaml" />
+	 value="file://../../$(env ROBOT)/launch/calibration/narrow_left.yaml"
+	 />
       <rosparam
-	 file="$(find $(env ROBOT))/launch/narrow_left.yaml" />
+	 file="../../$(env ROBOT)/launch/narrow_left.yaml" />
     </node>
     <include
-       file="$(find $(env ROBOT))/launch/image_pipeline.launch" />
+       file="../../$(env ROBOT)/launch/image_pipeline.launch" />
   </group>
 
   <group ns="narrow_right" >
@@ -23,12 +24,13 @@
 	  respawn="true" >
       <param
 	 name="camera_info_url"
-	 value="file://$(find $(env ROBOT))/launch/calibration/narrow_right.yaml" />
+	 value="file://../../$(env ROBOT)/launch/calibration/narrow_right.yaml"
+	 />
       <rosparam
-	 file="$(find $(env ROBOT))/launch/narrow_right.yaml" />
+	 file="../../$(env ROBOT)/launch/narrow_right.yaml" />
     </node>
     <include
-       file="$(find $(env ROBOT))/launch/image_pipeline.launch" />
+       file="../../$(env ROBOT)/launch/image_pipeline.launch" />
   </group>
 
   <group ns="wide_left" >
@@ -39,12 +41,12 @@
 	  respawn="true" >
       <param
 	 name="camera_info_url"
-	 value="file://$(find $(env ROBOT))/launch/calibration/wide_left.yaml" />
+	 value="file://../../$(env ROBOT)/launch/calibration/wide_left.yaml" />
       <rosparam
-	 file="$(find $(env ROBOT))/launch/wide_left.yaml" />
+	 file="../../$(env ROBOT)/launch/wide_left.yaml" />
     </node>
     <include
-       file="$(find $(env ROBOT))/launch/image_pipeline.launch" />
+       file="../../$(env ROBOT)/launch/image_pipeline.launch" />
   </group>
 
   <group ns="wide_right" >
@@ -55,11 +57,11 @@
 	  respawn="true" >
       <param
 	 name="camera_info_url"
-	 value="file://$(find $(env ROBOT))/launch/calibration/wide_right.yaml" />
+	 value="file://../../$(env ROBOT)/launch/calibration/wide_right.yaml" />
       <rosparam
-	 file="$(find $(env ROBOT))/launch/wide_right.yaml" />
+	 file="../../$(env ROBOT)/launch/wide_right.yaml" />
     </node>
     <include
-       file="$(find $(env ROBOT))/launch/image_pipeline.launch" />
+       file="../../$(env ROBOT)/launch/image_pipeline.launch" />
   </group>
 </launch>
