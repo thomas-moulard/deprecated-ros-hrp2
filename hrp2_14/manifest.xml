@@ -1,0 +1,12 @@
+<package>
+  <description brief="hrp2_14">
+
+     This package gathers files specific to hrp2_14.
+
+  </description>
+  <author>Thomas Moulard</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/hrp2_14</url>
+
+</package>
