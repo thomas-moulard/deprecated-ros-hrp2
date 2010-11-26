@@ -1,0 +1,14 @@
+<package>
+  <description brief="hrp2_common">
+
+     hrp2_common
+
+  </description>
+  <author>Thomas Moulard</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/hrp2_common</url>
+
+</package>
+
+
