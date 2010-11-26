@@ -1,4 +1,4 @@
-- MODE:
+- git:
     local-name: hrp2
     uri: git://github.com/laas/ros-hrp2.git
     version: master
