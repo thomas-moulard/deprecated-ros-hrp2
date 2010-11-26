@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find hrp2_$(env ROBOT))/launch/config.launch"/>
+  <include file="$(find hrp2_$(env ROBOT))/launch/camera.launch"/>
+</launch>
