@@ -1,67 +1,65 @@
 <launch>
-  <group ns="narrow_left" >
+  <group ns="narrow" >
     <node pkg="camera1394"
 	  type="camera1394_node"
-	  name="camera1394_node"
+	  name="left"
 	  machine="hrp2v"
 	  respawn="true" >
+      <remap from="camera" to="left" />
       <param
 	 name="camera_info_url"
-	 value="file://../../$(env ROBOT)/launch/calibration/narrow_left.yaml"
+	 value="file://$(env ROBOT_PKG)/launch/calibration/narrow_left.yaml"
 	 />
       <rosparam
-	 file="../../$(env ROBOT)/launch/narrow_left.yaml" />
+	 file="$(env ROBOT_PKG)/launch/narrow_left.yaml" />
     </node>
-    <include
-       file="../../$(env ROBOT)/launch/image_pipeline.launch" />
-  </group>
 
-  <group ns="narrow_right" >
     <node pkg="camera1394"
 	  type="camera1394_node"
-	  name="camera1394_node"
+	  name="right"
 	  machine="hrp2v"
 	  respawn="true" >
+      <remap from="camera" to="right" />
       <param
 	 name="camera_info_url"
-	 value="file://../../$(env ROBOT)/launch/calibration/narrow_right.yaml"
+	 value="file://$(env ROBOT_PKG)/launch/calibration/narrow_right.yaml"
 	 />
       <rosparam
-	 file="../../$(env ROBOT)/launch/narrow_right.yaml" />
+	 file="$(env ROBOT_PKG)/launch/narrow_right.yaml" />
     </node>
+
     <include
-       file="../../$(env ROBOT)/launch/image_pipeline.launch" />
+       file="$(env ROBOT_PKG)/launch/image_pipeline.launch" />
   </group>
 
-  <group ns="wide_left" >
-    <node pkg="camera1394"
-	  type="camera1394_node"
-	  name="camera1394_node"
-	  machine="hrp2v"
-	  respawn="true" >
-      <param
-	 name="camera_info_url"
-	 value="file://../../$(env ROBOT)/launch/calibration/wide_left.yaml" />
-      <rosparam
-	 file="../../$(env ROBOT)/launch/wide_left.yaml" />
-    </node>
-    <include
-       file="../../$(env ROBOT)/launch/image_pipeline.launch" />
-  </group>
 
-  <group ns="wide_right" >
+  <group ns="wide" >
     <node pkg="camera1394"
 	  type="camera1394_node"
-	  name="camera1394_node"
+	  name="left"
 	  machine="hrp2v"
 	  respawn="true" >
+      <remap from="camera" to="left" />
       <param
 	 name="camera_info_url"
-	 value="file://../../$(env ROBOT)/launch/calibration/wide_right.yaml" />
+	 value="file://$(env ROBOT_PKG)/launch/calibration/wide_left.yaml" />
       <rosparam
-	 file="../../$(env ROBOT)/launch/wide_right.yaml" />
+	 file="$(env ROBOT_PKG)/launch/wide_left.yaml" />
+    </node>
+
+    <node pkg="camera1394"
+	  type="camera1394_node"
+	  name="right"
+	  machine="hrp2v"
+	  respawn="true" >
+      <remap from="camera" to="right" />
+      <param
+	 name="camera_info_url"
+	 value="file://$(env ROBOT_PKG)/launch/calibration/wide_right.yaml" />
+      <rosparam
+	 file="$(env ROBOT_PKG)/launch/wide_right.yaml" />
     </node>
     <include
-       file="../../$(env ROBOT)/launch/image_pipeline.launch" />
+       file="$(env ROBOT_PKG)/launch/image_pipeline.launch" />
   </group>
 </launch>
