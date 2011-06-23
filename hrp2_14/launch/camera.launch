@@ -28,8 +28,6 @@
 	 file="$(env ROBOT_PKG)/launch/narrow_right.yaml" />
     </node>
 
-    <include
-       file="$(env ROBOT_PKG)/launch/image_pipeline.launch" />
   </group>
 
 
@@ -59,7 +57,5 @@
       <rosparam
 	 file="$(env ROBOT_PKG)/launch/wide_right.yaml" />
     </node>
-    <include
-       file="$(env ROBOT_PKG)/launch/image_pipeline.launch" />
   </group>
 </launch>
