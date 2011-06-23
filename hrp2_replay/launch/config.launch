@@ -1,0 +1,13 @@
+<launch>
+  <machine name="hrp2v"
+	   address="localhost"
+	   ros-root="/opt/ros/diamondback/ros"
+	   ros-package-path="/home/nddang/src/ros:/opt/ros/diamondback/stacks"
+	   user="nddang"
+	   default="true" />
+
+  <machine name="hrp2c"
+	   address="localhost"
+	   user="nddang"
+	   default="false" />
+</launch>

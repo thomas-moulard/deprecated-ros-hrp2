@@ -1,0 +1,10 @@
+/**
+\mainpage
+\htmlinclude manifest.html
+
+\b hrp2_14 contains files specific to the hrp2-14 robot.
+
+This file contains roslaunch script files used to initialize ROS on
+hrp2-14.
+
+*/

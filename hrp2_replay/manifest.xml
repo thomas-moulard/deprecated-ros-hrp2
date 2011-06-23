@@ -1,0 +1,12 @@
+<package>
+  <description brief="hrp2_replay">
+
+     This package gathers files specific to hrp2_replay.
+
+  </description>
+  <author>Thomas Moulard</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/hrp2_replay</url>
+
+</package>

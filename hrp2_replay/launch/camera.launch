@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="rosbag"
+  type="rosbag"
+  name="stereo"
+  args="play -l $(find hrp2_replay)/data/active.bag"
+  />
+</launch>
